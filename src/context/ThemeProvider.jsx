@@ -5,6 +5,7 @@ const themeContext = createContext({
   bgColor: '',
   appBgColor: '',
   textColor: '',
+  textColorSec: '',
   toggleTheme: () => {},
 });
 
@@ -16,6 +17,9 @@ export const ThemeProvider = ({ children }) => {
   const bgColor = darkMode ? 'bg-dark-bg' : 'bg-light-bg';
   const appBgColor = darkMode ? 'bg-app-dark-bg' : 'bg-app-light-bg';
   const textColor = darkMode ? 'text-dark-text' : 'text-light-text';
+  const textColorSec = darkMode
+    ? 'text-dark-text-secondary'
+    : 'text-light-text-secondary';
 
   //toggle theme
   const toggleTheme = () => {
@@ -24,7 +28,14 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <themeContext.Provider
-      value={{ darkMode, toggleTheme, bgColor, textColor, appBgColor }}
+      value={{
+        darkMode,
+        toggleTheme,
+        bgColor,
+        textColor,
+        appBgColor,
+        textColorSec,
+      }}
     >
       {children}
     </themeContext.Provider>
