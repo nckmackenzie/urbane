@@ -17,7 +17,7 @@ function SearchInput() {
         name="q"
         className={`w-full py-2 text-sm text-white bg-inherit rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900 placeholder:${textColorSec}`}
         placeholder="Search property,customer,etc..."
-        autocomplete="off"
+        autoComplete="off"
       />
     </form>
   );
