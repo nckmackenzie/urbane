@@ -1,3 +1,5 @@
 import SearchInput from './SearchInput';
+import Card from './Card';
+import PageTitle from './PageTitle';
 
-export { SearchInput };
+export { SearchInput, Card, PageTitle };
