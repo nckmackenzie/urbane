@@ -8,9 +8,11 @@ function NavItem({ path, name, icon }) {
     <li className="">
       <Link
         to={path}
-        className={`flex items-center gap-1 ${textColorSec} rounded-md p-4 ${
+        className={`flex items-center gap-1 ${
+          path === location.pathname ? 'text-app-light-bg' : textColorSec
+        } rounded-md p-4 ${
           path === location.pathname
-            ? 'bg-primary text-app-light-bg'
+            ? 'bg-primary'
             : 'hover:bg-primary hover:text-app-light-bg'
         } `}
       >
