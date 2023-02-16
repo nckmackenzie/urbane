@@ -4,11 +4,14 @@ import { RouterProvider } from 'react-router-dom';
 import { router } from './routes/routes';
 import { ThemeProvider } from './context/ThemeProvider';
 import './index.css';
+import { UserMenuProvider } from './context/UserMenuProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} />
+      <UserMenuProvider>
+        <RouterProvider router={router} />
+      </UserMenuProvider>
     </ThemeProvider>
   </React.StrictMode>
 );
