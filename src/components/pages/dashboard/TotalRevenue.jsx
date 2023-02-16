@@ -6,10 +6,7 @@ import { Card } from '../../ui';
 function TotalRevenue() {
   const { textColor } = useTheme();
   return (
-    <Card className="rounded-2xl w-full md:w-3/4 ">
-      <div className={`${textColor} text-lg font-semibold mb-6`}>
-        Total Revenue
-      </div>
+    <Card className="rounded-2xl w-full md:w-3/4 " title="Total Revenue">
       <div className={`font-bold text-3xl ${textColor}`}>KES 614,000</div>
       <ReactApexChart
         series={TotalRevenueSeries}

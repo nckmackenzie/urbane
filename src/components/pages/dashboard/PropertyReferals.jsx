@@ -6,10 +6,7 @@ import Referal from './Referal';
 function PropertyReferals() {
   const { textColor } = useTheme();
   return (
-    <Card className={`w-full md:w-1/4 flex flex-col`}>
-      <div className={`${textColor} text-lg font-semibold mb-6`}>
-        Property Referals
-      </div>
+    <Card className={`w-full md:w-1/4 flex flex-col`} title="Property Referals">
       <div className="flex flex-col gap-6 h-[calc(100%-52px)]">
         {propertyReferralsInfo?.map(referal => (
           <Referal key={referal.title} {...referal} />
