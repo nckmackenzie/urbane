@@ -7,7 +7,7 @@ function SearchInput() {
     <form
       action=""
       role="search"
-      className={`${bgColor} relative w-1/4 ${textColor}`}
+      className={`${bgColor} hidden lg:inline-block relative w-1/4 ${textColor}`}
     >
       <span className="absolute inset-y-0 left-0 flex items-center pl-2">
         <BiSearch />
