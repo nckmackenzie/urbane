@@ -1,3 +1,4 @@
+import { HiDotsVertical } from 'react-icons/hi';
 import { useTheme } from '../../../context/ThemeProvider';
 
 function Agent({ avatar, name }) {
@@ -11,6 +12,9 @@ function Agent({ avatar, name }) {
           <div className={`text-xs ${textColorSec}`}>Top Agent</div>
         </div>
       </div>
+      <button className="">
+        <HiDotsVertical />
+      </button>
     </div>
   );
 }
