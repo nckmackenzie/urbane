@@ -2,6 +2,7 @@ import { AiOutlineDashboard, AiOutlineStar } from 'react-icons/ai';
 import { BiBuildingHouse, BiMessageRounded } from 'react-icons/bi';
 import { BsPeople } from 'react-icons/bs';
 import { MdOutlineAccountCircle } from 'react-icons/md';
+import { agent1, agent2 } from '../assets';
 
 export const navigation = [
   { name: 'Dashboard', path: '/', icon: <AiOutlineDashboard size={24} /> },
@@ -133,4 +134,9 @@ export const propertyReferralsInfo = [
     percentage: 15,
     color: '#F45252',
   },
+];
+
+export const agents = [
+  { name: 'Jayden Doe', avatar: agent1 },
+  { name: 'Jillian Doe', avatar: agent2 },
 ];
