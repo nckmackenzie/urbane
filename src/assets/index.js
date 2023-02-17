@@ -13,6 +13,16 @@ import apartment2 from './apartment2.jpg';
 import apartment3 from './apartment3.jpg';
 import apartment4 from './apartment4.jpg';
 import apartment5 from './apartment5.jpg';
+import sale1 from './sale1.jpg';
+import sale2 from './sale2.jpg';
+import sale3 from './sale3.jpg';
+import sale4 from './sale4.jpg';
+import sale5 from './sale5.jpg';
+import sale6 from './sale6.jpg';
+import sale7 from './sale7.jpg';
+import sale8 from './sale8.jpg';
+import sale9 from './sale9.jpg';
+import sale10 from './sale10.jpg';
 
 export {
   agent1,
@@ -30,4 +40,14 @@ export {
   apartment3,
   apartment4,
   apartment5,
+  sale1,
+  sale2,
+  sale3,
+  sale4,
+  sale5,
+  sale6,
+  sale7,
+  sale8,
+  sale9,
+  sale10,
 };
