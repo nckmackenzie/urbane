@@ -2,7 +2,23 @@ import { AiOutlineDashboard, AiOutlineStar } from 'react-icons/ai';
 import { BiBuildingHouse, BiMessageRounded } from 'react-icons/bi';
 import { BsPeople } from 'react-icons/bs';
 import { MdOutlineAccountCircle } from 'react-icons/md';
-import { agent1, agent2, agent3, agent4, agent5 } from '../assets';
+import {
+  agent1,
+  agent2,
+  agent3,
+  agent4,
+  agent5,
+  villa1,
+  villa2,
+  villa3,
+  villa4,
+  villa5,
+  apartment1,
+  apartment2,
+  apartment3,
+  apartment4,
+  apartment5,
+} from '../assets';
 
 export const navigation = [
   { name: 'Dashboard', path: '/', icon: <AiOutlineDashboard size={24} /> },
@@ -142,4 +158,80 @@ export const agents = [
   { name: 'Teknomiles Doe', avatar: agent3 },
   { name: 'Ayra Doe', avatar: agent4 },
   { name: 'Bien Doe', avatar: agent5 },
+];
+
+export const latestSales = [
+  {
+    id: 1,
+    name: 'One Bedroom Villa',
+    location: 'Karen,Nairobi',
+    image: villa1,
+    value: 'Ksh. 4.6M',
+  },
+  {
+    id: 2,
+    name: 'Three Bedroom Bungalow',
+    location: 'Runda,Nairobi',
+    image: villa2,
+    value: 'Ksh. 13M',
+  },
+  {
+    id: 3,
+    name: 'Two Bedroom Villa',
+    location: 'Runda,Nairobi',
+    image: villa3,
+    value: 'Ksh. 9M',
+  },
+  {
+    id: 4,
+    name: 'Three Bedroom Villa',
+    location: 'Nanyuki,Nanyuki',
+    image: villa4,
+    value: 'Ksh. 6.7M',
+  },
+  {
+    id: 5,
+    name: 'Three Bedroom Villa',
+    location: 'Nyali,Mombasa',
+    image: villa5,
+    value: 'Ksh. 7M',
+  },
+];
+
+export const lastestRentals = [
+  {
+    id: 1,
+    name: 'One Bedroom,Hope Apartments',
+    location: 'Juja,Thika',
+    image: apartment1,
+    value: 'Ksh. 24k/mon',
+  },
+  {
+    id: 2,
+    name: 'Two Bedroom,Miles Apartment',
+    location: 'Kilimani,Nairobi',
+    image: apartment2,
+    value: 'Ksh. 45k/mon',
+  },
+  {
+    id: 3,
+    name: 'Two Bedroom, Cloise Apartments',
+    location: 'South C,Nairobi',
+    image: apartment3,
+    value: 'Ksh. 33k/mon',
+  },
+  {
+    id: 4,
+    name: 'One Bedroom,Jude Apartments',
+    location: 'Kitengela,Kajiado',
+    image: apartment4,
+    value: 'Ksh. 25k/mon',
+  },
+  {
+    id: 5,
+    name: 'Two Bedroom,Limanel Apartments',
+    location: 'Kitengela,Kajiado',
+    image: apartment5,
+    value: 'Ksh. 35k/mon',
+  },
 ];
