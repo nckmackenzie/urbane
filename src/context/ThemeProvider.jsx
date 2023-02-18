@@ -6,6 +6,7 @@ const themeContext = createContext({
   appBgColor: '',
   textColor: '',
   textColorSec: '',
+  badgeBgColor: '',
   toggleTheme: () => {},
 });
 
@@ -20,7 +21,7 @@ export const ThemeProvider = ({ children }) => {
   const textColorSec = darkMode
     ? 'text-dark-text-secondary'
     : 'text-light-text-secondary';
-
+  const badgeBgColor = darkMode ? 'bg-dark-bg' : 'bg-secondary';
   //toggle theme
   const toggleTheme = () => {
     setDarkMode(prev => !prev);
@@ -35,6 +36,7 @@ export const ThemeProvider = ({ children }) => {
         textColor,
         appBgColor,
         textColorSec,
+        badgeBgColor,
       }}
     >
       {children}
