@@ -13,6 +13,7 @@ module.exports = {
         'dark-bg': '#111315',
         'app-light-bg': '#FCFCFC',
         'app-dark-bg': '#1A1D1F',
+        'hover-color': '#F7F7F7',
       },
     },
     fontFamily: {
