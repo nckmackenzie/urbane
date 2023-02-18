@@ -19,3 +19,7 @@ export function nFormatter(num, digits) {
     ? (num / item.value).toFixed(digits).replace(rx, '$1') + item.symbol
     : '0';
 }
+
+export const capitalizeFirstWord = string => {
+  return `${string[0].toUpperCase()}${string.slice(1)}`;
+};
