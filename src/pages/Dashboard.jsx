@@ -3,6 +3,7 @@ import {
   Stats,
   TotalRevenue,
   AgentsCustomerSales,
+  PropertyList,
 } from '../components/pages/dashboard';
 import { PageTitle } from '../components/ui';
 
@@ -16,6 +17,7 @@ function Dashboard() {
         <PropertyReferals />
       </div>
       <AgentsCustomerSales />
+      <PropertyList />
     </div>
   );
 }
